@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 0 30px;
+}
+
+#nav h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#nav i {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: 500;
+}
+
+#center {
+    width: 100%;
+    padding: 40px 80px;
+}
+
+#center h1 {
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 4.4vw;
+}
+
+#center-in {
+    width: 100%;
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#center-in p {
+    font-size: 1vw;
+    font-weight: 600;
+    line-height: 1.1vw;
+    max-width: 70%;
+}
+
+#right {
+    width: 20%;
+    min-width: 150px;
+}
+
+.elem {
+    padding: 20px 0;
+    border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elem i {
+    font-size: 25px;
+    font-weight: 500;
+    opacity: 0;
+}
+
+.elem a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.elem:hover i {
+    opacity: 1;
+}
+
+.elem:hover a {
+    text-decoration: underline;
+}
+
+#bottom {
+    width: 100%;
+    height: 36%;
+    min-height: 270px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.unsplash.com/photo-1635863138275-d9b33299680b?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 0 25%;
+}
+
+@media (max-width: 600px) {
+    #nav {
+        height: 60px;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    #nav h4 {
+        font-size: 13px;
+        display: none;
+    }
+
+    #nav i {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    #center {
+        padding: 20px;
+    }
+
+    #center h1 {
+        font-size: 10vw;
+        line-height: 12vw;
+    }
+
+    #center-in {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #center-in p {
+        font-size: 3.5vw;
+        line-height: 5vw;
+        max-width: 100%;
+    }
+
+    #right {
+        width: 100%;
+    }
+
+    .elem {
+        padding: 15px 0;
+    }
+
+    .elem i {
+        font-size: 20px;
+    }
+
+    .elem a {
+        font-size: 18px;
+    }
+}

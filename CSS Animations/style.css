@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: black;
+    padding: 5vw
+}
+button{
+   padding: 10px 20px;
+   background-color: transparent;
+   border:2px solid cyan ;
+   mix-blend-mode: difference;
+   color: cyan;
+   font-weight: 600;
+   position: relative;
+   transition: linear all 0.3s;
+   overflow: hidden;
+  
+
+}
+
+button::after{
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: cyan;
+    position: absolute;
+    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: linear all 0.5s;
+    z-index: -1;
+}
+button:hover::after{
+    transform: translate(-50%,-50%) scale(2.5);
+
+}
+button:hover{
+    color: black;
+}

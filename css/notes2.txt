@@ -1,0 +1,206 @@
+
+             <!--width and height -->
+
+*ek box banao jo ki red ho
+box=div
+div banao html mein
+div (ko width hota hei hight nahi hota) width height dijiye css mein
+ background color red dijiye
+
+
+*how to recognize which is div in website:
+jaha bhi rectangular shapes dikhe waha bhi div hei 
+
+
+h1 - matalab tag
+#h1 - matlab id
+.h1 - matalab class
+
+example:
+
+<div></div>
+target karne keliye div likho
+<div id="a"></div>
+ target karne ke liye #a likhna padega 
+ <div class="a"></div>
+ target karne ke liye .a likhna padega >
+
+ *kyun karna hei individually target karne ke liye kahi sab na hojaye
+
+               <!--color & background color-->
+
+          color = text color
+          background color = background ka color text ke piche
+
+                      <!--unit-->
+
+          1. pixels:
+          #uthna use nahi karte due to content hide hota hei
+          2. percentage: 
+          #content hide nahi hota screen ke hisabh se adjust hota hei
+          3. vw & vh:
+          
+
+          example:
+           <div id="parent">
+               <div id="child"></div>
+           </div>
+           css:
+           parent{
+               width: 600px;
+               height: 200px;
+               background:yellow
+
+           }
+
+           child{
+               width: 100%;
+               height:100%;
+               background:red
+           }
+            
+           #ye % parent ka width 100% and height 100% 
+           cover karega naki full screen it apply on parent 
+           #if vm and vh replaces % in child it will cover entire screen 
+           # vm and vh  wil not apply on parent it will apply on full screen
+
+          4.em & rem:
+          #em depend hota hei us element ke font size par,aur parent ko dete hei tho childrean pa bhi apply hota hei 
+
+          #matlab kuch aisa:
+          consider karliye ek element hei jiske paas 16px font size  hai 1em ki value 16px ki hogi agar font size change kiya tho uske responce me em ki value bhi badegi
+            
+            example:
+            font size - 16px
+            width - 2em
+            height - 2em
+
+            1em  = 16pixels means 2 means 2*16 = 32
+            32h and 32w
+
+           
+              #rem depend hota hei html tag ke font size me 
+              html{
+               font-size:12px;
+              }
+
+             example:
+             width - 2rem
+             height - 2rem
+
+             1 rem = 12 pixels  means 2 means 2*12 = 24
+             24h and 24w
+
+               #difference is it em uses element font size amd rem uses html tag font size
+               note: rem is root element kehete hei beacause sbh khch html tag ke andhr hota hei 
+               isliye root kehte hei
+
+                   <!-- max-width and max-height -->
+
+             #maximum width itni hi hogi limit kar degi no matter how much you gave in width 
+             #minimum width need to have
+
+             #maximum height similar to maximum width
+             #minimum height need to have 
+
+               <!--Font family & Font size-->
+               #chinging fonts and all (just wtite text and emmit abbrivation will help)
+
+               Font size:
+               # use vw because it will change according to screen
+
+               <!--line height-->
+               #line ke bich me spacing
+
+               <!--text allign-->
+               #text kaha se shuru hona hei left or right ye decide karta hei 
+
+               <!--padding & margin-->
+               check example
+
+               <!--border-->
+               check example 
+               simlirly as solid,dashed,double hota hei
+
+               border radius:
+               #round edges
+
+               <!--Display properties-->
+
+               1.block element: will not allow anybody to come left or right in row
+               (koyi nahi askatha uske sath row me) aur width and height de sakhta hei
+               2.inline element: will allow anybody to come left right
+               (askhta hei agar jagha hei tho ) width and height nahi badha sakhte
+               3.inline block :  by default nature ka nahi hota,block ko inline block banaya tho bagal me 
+               koyi bhi side me askhta hei,width and height de sakhte hei
+                    
+
+               postion absolute :
+               #lets say 3 car hei queue me
+               car1 
+               car2
+               car3
+               car2 ko absolute kar diya tho uppar uth jayage 
+               and car will move forward car2 can move anywhare using top tag
+               if car3 absolute kar diya it will level up
+
+               postion relative:
+               ek div hei usme ek cube hei cube ko postion absolute  bana diya tho
+               vo uppar uth jayega agar cube ko dev ke andhar rakhna hei tho 
+               dev ko postion relative banado
+               
+               
+               postion fixed:
+                if page is bigger if it has scroller 
+               dev ko ek jagha fix karna heio tho use karo postion fixed
+
+                
+                  <!--Background-->
+ 
+              #background:ek propert hei background usme url pass kar sakhte ho 
+
+              #image ka url dene ke badh image show nahi horaha tho another property 
+              background-size:cover; cover matlab pura dev ko cover karo,contain matlab image ko dev ke andhar 
+              lata hei if it is missing 
+              
+              #agar image ka center vala part show karna hei tho 
+              background-postion:center;
+
+              #linear gradiant: 2 color ko mix karta hei use just background property
+
+                   <!--flex-box-->
+
+                   #parent ko flex kar diya tho child(elements) side by side ajayenge
+
+                       x-axis is main axis(agar left se right tho main axis left se right,  elements
+                        right se left tho main axis right se left)by default left se right hoti hei.
+                       y-axis is cross axis(agar top se bottom tho cross acess top se bottom, vise-versa)by deafualt top se bottom hota hei 
+
+                       #main axis pe work karne ke liya use hota hei "justified content".
+                       #cross axis pe work karne ke liye use hota hei "alligned items".
+                         
+                       additional:
+                       justified content:space between -->space between(space between).
+                       justified content:space around -->space around(space around elemenet).
+                       justified content:space evenly-->space evenly(space bahra bhar batatha hei).
+                       justified content:end --> sare elements ko end me pahuncha dega,align item:end bhi same.
+
+                     
+
+
+
+
+                       
+                       
+
+
+
+
+            
+              
+
+
+
+
+               
+        

@@ -1,0 +1,5 @@
+repeatation steps:
+html file
+css file 
+and wright boilerplate code
+link both of them
