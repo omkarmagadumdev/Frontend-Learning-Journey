@@ -1,9 +1,9 @@
-console.log("hello");//log
+// console.log("hello");//log
 
-console.warn("hello");//warn
+// console.warn("hello");//warn
 
-console.error("hello");//error
+// console.error("hello");//error
 
-alert("hello");//alert
+// alert("hello");//alert
 
-prompt("name");//prompt
+// prompt("name");//prompt
