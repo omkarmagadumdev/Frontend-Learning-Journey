@@ -44,4 +44,88 @@ discount = 50;//cant change the constant value its fixed
 
 # js level 3
 
-- 
+### Data types
+
+- omkar - string
+- 12 - integer
+- 12.3 - float
+- ture - boolean
+- a - character
+- string - "56vnvhky57843"
+
+- [] {} () - reference dt
+- 12,12.4,omkar,a,null,undefined - primitive
+
+```js
+var arr =[1,2,3,4,5,6];
+var b = arr;
+
+b.pop();// it is taking reference of arr
+
+var arr =[1,2,3,4,5,6];
+var b = [...arr];// now its coping the aar value not referencing it.
+
+b.pop();
+```
+### conditionals
+
+###  There are three types of conditionals --
+1 if else statement
+2 ternary operator
+3 switch case 
+
+
+### truthy and falsy concept
+- null undefined, NaN, 0, "" ,'', false, document.all, - falshy hongi
+- baki sabh truthy
+
+### if else
+```js
+if(12>13) console.log("harry");
+
+else console.log("harry");
+```
+
+### if elseif
+```js
+if(12>10){
+    
+        
+}
+else if(11>10){
+
+}
+else {
+    
+}
+```
+### loops 
+```js
+for(start; end; change){
+    
+}
+
+
+start;
+while(end){
+    change
+}
+```
+# Level4
+
+### functions
+
+- es5 and es6
+- es5 - function statement,function expression,anonymous function
+- es6 - fat arrow function
+1. basic fat arrow
+2. fat arrow with one param
+3. fat arrow with implicit return
+
+```js
+funtion abcd(){
+    console.log("coding");
+}
+abcd();
+
+```
