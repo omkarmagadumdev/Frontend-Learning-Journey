@@ -123,9 +123,53 @@ while(end){
 3. fat arrow with implicit return
 
 ```js
-funtion abcd(){
-    console.log("coding");
+funtion abcd()//parameter{
+    // your code
 }
-abcd();
+abcd();//argument
 
 ```
+### parameters and agruments
+
+```js
+function abcd(val){
+    console.log(12+val);
+}
+abcd(12);
+
+output:24
+```
+### return
+```js
+function abcd(){
+    return 12;
+}
+
+console.log(abcd());
+```
+
+### for interview
+```js
+functon abcd(){
+    //function statement
+}
+
+var abcd = function(){
+    //function expression
+}
+
+function(){
+    //anonymus function
+}
+
+//fat arrow
+ var a = ()=>{
+    return 12;
+ }
+ var b = a();
+
+ // implicit return
+
+ var a = ()=>12
+ var b = a();
+ ```
