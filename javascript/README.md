@@ -145,7 +145,8 @@ function abcd(){
     return 12;
 }
 
-console.log(abcd());
+// console.log(abcd());
+var a = abcd(); 
 ```
 
 ### for interview
@@ -173,3 +174,51 @@ function(){
  var a = ()=>12
  var b = a();
  ```
+
+ # js level 5
+
+ ### undefined, notdefined, null
+
+ ```js
+ var a;// value not given to a so it is undefined
+
+console.log(a);// reference error because a is not declared
+
+
+ ``` 
+### arrays
+
+- when you want to keep one or more than one value at same time
+
+```js
+var arr = [];
+var users =["om","sidd","akash","akashy","harsh"];// we mix anything like function(){},[],'string',4 but not in java 
+```
+
+### loop in array
+```js
+var arr = [1,2,3,4,5];
+arr.forEach (function(val){
+    console.log(val + 1);
+
+})
+```
+
+### objects
+```js
+var obj={};
+//or
+var obj2= new Object();
+Example:
+var battery={
+    company:"cannon",
+    price: 1200,
+    for :"camera",
+    isWroking:true,
+
+};
+battery.for 
+```
+### synchronous and asynchronous
+- synchronous code run line by line
+- async will not run line by line,all async code run at a time which ever c will answer  complet first .
