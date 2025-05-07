@@ -20,11 +20,11 @@
 // //or
 // var obj2= new Object();
 
-var battery={
-    company:"cannon",
-    price: 1200,
-    for :"camera",
-    isWroking:true,
+// var battery={
+//     company:"cannon",
+//     price: 1200,
+//     for :"camera",
+//     isWroking:true,
 
-};
-battery.for 
+// };
+// battery.for 

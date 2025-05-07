@@ -222,3 +222,54 @@ battery.for
 ### synchronous and asynchronous
 - synchronous code run line by line
 - async will not run line by line,all async code run at a time which ever c will answer  complet first .
+
+# All Advanced js concepts
+
+```js
+//global window
+console.log(this);//this is in global scope
+
+
+function abcd(){
+    console.log(this);
+}//this is in function scope
+abcd();
+
+//method - obj
+
+var obj={
+    name:function(){
+        console.log(this);
+    },
+    age: 25,
+    email:"kuchb bhi.com"
+}
+obj.name();
+
+//function inside methos(es5)- window
+var obj2 ={
+    sayNmae:function(){
+        console.log(this);
+        function childfnc(){
+            console.log(this);
+        }
+        childfnc();
+    },
+    age:25
+    
+}
+obj2.sayName
+
+// fnc inside method (es6) - object
+var obj3 = {
+    sayName: function(){
+        const child =()=>{
+            console.log(this);
+        }
+        child();
+    }
+}
+obj3.sayName();
+```
+
+
