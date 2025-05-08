@@ -30,3 +30,14 @@ var obj2 ={
 obj2.sayNmae();
 
 // constructer fnc main this ki value - new blanck object 
+function add(){
+    console.log(this);
+
+}
+
+const ans = new add();
+//event listner mein this ki value - that element jis par event lis. laga ho
+document.querySelector("button")
+.addEventListener("click",function(){
+    console.log(this);
+})
