@@ -285,13 +285,3 @@ document.querySelector("button")
     console.log(this);
 })
 ```
-
-# DOM manipulation
-sandwich 
-
-- selection
-- change
-- event
-
-### Accessing Elements:
-
