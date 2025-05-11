@@ -57,16 +57,10 @@ document.querySelector('body').removeChild(img)
 
 ```js
 var btn = document.querySelector('button');
-btn.addEventListener('click',function(){
+btn.addEventListener('click',function() {
     alert();//event
     btn.textContent = "make new card";//event
     btn.style.backgroundColor="red";//event
     
 })
-```
-
-## Event object
-
-```js
-
 ```
