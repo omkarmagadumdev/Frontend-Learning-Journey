@@ -285,3 +285,51 @@ document.querySelector("button")
     console.log(this);
 })
 ```
+
+
+# Js Practice Questions:
+
+1. create a html page with a button,when the button is clicked, change the text of paragraph element.
+
+```js
+
+<button>click me </button>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+var btn = document.querySelector("button");
+var p = document.querySelector("p");
+
+btn.addEventListener("click",function(){
+    p.textContent = "hey";
+    
+})
+```
+2. create a page with two images and a button. when the button is clicked, swap the source attribute of the images.
+
+```js
+
+    <img id = "one"src="https://images.unsplash.com/photo-1744424945597-d695380d092a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8" alt="">
+    <img id ="two"src="https://images.unsplash.com/photo-1744968776876-283d9ae15eb0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8" alt="">
+    <button>swap image</button>
+
+var img1=document.querySelector("#one");
+var img2=document.querySelector("#two");
+
+document.querySelector("button")
+.addEventListener("click",function(){
+    var src1=img1.src;
+    var src2=img2.src;
+   
+
+    img1.src= src2;
+    img2.src=src1;
+
+})
+
+```
+3. create a form with input fields and a submit button. use js to validate the form and display an error message if the input is invalid.
+
+```js
+
+
+```
