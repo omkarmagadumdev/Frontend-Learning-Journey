@@ -355,10 +355,36 @@ for(var i =0; i<inps.length;i++){
    }
 }
 })
+```
 
+4. create a unorderd list.Allow users to add remove list items dynamically using buttons.
 
+```js
+    <ul>
+      <li>apple</li>
+    </ul>
+<input type="text" placeholder="add new item">
+<button id = "add">add</button>
+<button id = "remove">remove</button>
 
+var add = document.querySelector("#add");
+var remove = document.querySelector("#remove");
+var inp = document.querySelector("input");
+var ul = document.querySelector("ul");
+var li;
 
+add.addEventListener("click",function(){
+    if(inp.value.trim() === ''){}
+    else{
+        li = document.createElement("li");
+        li.textContent = inp.value;
+        ul.appendChild(li);
+        inp.value = ""
+        }
+})
 
+remove.addEventListener("click",function(){
+   ul.removeChild(li);
+})
 
 ```
