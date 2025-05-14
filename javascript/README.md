@@ -330,6 +330,35 @@ document.querySelector("button")
 3. create a form with input fields and a submit button. use js to validate the form and display an error message if the input is invalid.
 
 ```js
+ <form>
+        <h4 id = " error"></h4>
+      <input id = "inp1"type="text">
+      <input id="inp2"type="text">
+       <input type="submit">
+    </form>
+
+var form = document.querySelector("form")
+var inps= document.querySelectorAll('input[type="text"]')
+var h4 = document.querySelector("h4");
+
+
+form.addEventListener("submit",function(ev){
+    ev.preventDefault();
+
+// console.log(inps.length);
+
+for(var i =0; i<inps.length;i++){
+   if(inps[i].value.trim()===''){
+      h4.textContent = "Error,some fields are blank";
+      h4.style.color= "red";
+      break;
+   }
+}
+})
+
+
+
+
 
 
 ```
