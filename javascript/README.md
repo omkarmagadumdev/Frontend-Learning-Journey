@@ -414,6 +414,10 @@ stop.addEventListener("click",function(){
 })
 
 ```
+6. create a tabbed interface where clicking on tabs display different content sections without page relode.
+```js
 
+
+```
 
 
