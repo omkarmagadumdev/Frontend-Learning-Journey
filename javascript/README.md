@@ -391,7 +391,7 @@ remove.addEventListener("click",function(){
 5. Build a countdown timer that starts when a button is clicked and update the display in real time.
 
 ```js
- <h3>0</h3>
+ <h3>0</h3> 
     <button id="start" >start</button>
     <button id="stop" >stop</button>
     <script src="script.js"></script>
