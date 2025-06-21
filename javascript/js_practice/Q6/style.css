@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: "gilroy";/ */
+}
+
+html,body{
+    height: 100%;
+    width: 100% ;
+}
+body{
+    padding: 20px;
+}
+
+#tabs{
+    display: flex;
+    gap: 20px;
+}
+
+.tab{
+    cursor: pointer;
+    padding: 12px 22px;
+  background-color: gray;
+  border-radius: 2px ;
+  border: 2px solid #dadada;
+  border: 10px;
+ font-weight: 700;
+}

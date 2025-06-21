@@ -416,6 +416,57 @@ stop.addEventListener("click",function(){
 ```
 6. create a tabbed interface where clicking on tabs display different content sections without page relode.
 ```js
+    <div id="tabs">
+        <div class="tab">home</div>
+        <div class="tab">about</div>
+        <div class="tab">contact</div>
+    </div>
+
+    <h3 id="hometext"></h3>
+    <h3 id="abouttext"></h3>
+    <h3 id="contacttext"></h3>
+
+
+    var home = document.querySelector("#home")
+var about= document.querySelector("#about")
+var contact = document.querySelector("#contact")
+
+var hometext = document.querySelector("#hometext")
+var abouttext = document.querySelector("#abouttext")
+var contacttext= document.querySelector("#contacttext");
+
+home.addEventListener("click",function(){
+    sarretexthato()
+    hometext.style.display = "block";
+    hometext.style.width= "50%";
+
+})
+
+
+
+
+about.addEventListener("click",function(){
+    sarretexthato()
+    abouttext.style.display = "block";
+    abouttext.style.width= "50%";
+
+})
+
+
+contact.addEventListener("click",function(){
+    sarretexthato()
+    contacttext.style.display = "block";
+    contacttext.style.width= "50%";
+
+})
+
+
+function sarretexthato(){
+    document.querySelectorAll("h3").forEach(function(h3){
+        h3.style.display = "none";
+    })
+}
+
 
 
 ```
