@@ -1,23 +1,15 @@
-var add = document.querySelector("#add");
-var remove = document.querySelector("#remove");
-var inp = document.querySelector("input");
-var ul = document.querySelector("ul");
-var li;
+var form = document.querySelector("form");
+var inps = document.querySelectorAll('input[type="text"]');
+var h4 = document.querySelector("h4");
 
-add.addEventListener("click",function(){
-  if(inp.value.trimm()===''){
 
+form.addEventListener("click",function(ev){
+  ev.preventDefault();
+  for(var i=0;i<inps.length;i++){
+    if(inps[i].value.trim()===""){
+      h4.textContent ="error"
+      h4.style.color = "red"
+    }
   }
-  else{
-    li = document.createElement("li");
-    li.textContent= inp.value
-    ul.appendChild(li);
-     inp.value = "";
-     
-  }
-})
 
-remove.addEventListener("click",function(){
-   ul.removeChild(li);
 })
-

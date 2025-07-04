@@ -474,7 +474,52 @@ function sarretexthato(){
 
 ```js
 
+ <div id="downloadcapsuel">
+        <div id="progress">
+            
+        </div>
+    </div>
 
+
+    var prg = document.querySelector("#progress");
+var count =0;
+var int = setInterval(function(){
+    if(count == 100){
+     clearInterval(int)
+    }
+   count++;
+   prg.style.width = count +'%'
+},50)
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#downloadcapsuel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+    height: 5px;
+    width: 200px;
+    background-color: #dadada;
+
+}
+
+#progress{
+    height: 100%;
+    width: 50%;
+    border-radius: 100px;
+    background-color: rgb(127, 162, 127);
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
 
 ```
 
