@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>three DOM</title>
+</head>
+<body style="background-color: black; color: white; " >
+
+<ul class="language">
+    <li>javascript</li>
+    
+</ul>
+    
+</body>
+<script>
+      
+    //  function addlang(langname){
+    //     const li = document.createElement('li')
+    //     li.textContent = langname
+    //     document.querySelector(".language").appendChild(li)
+    //  }
+
+    //  addlang("python");
+
+    //  optimized 
+     function addlang(langname){
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(langname))
+
+        document.querySelector(".language").appendChild(li)
+     }
+     addlang("c++")
+     addlang("python")
+     addlang("c")
+     addlang("java")
+
+// const secondlang = document.querySelector("li:nth-child(2)")
+// const myli = document.createElement("li")
+// myli.textContent = "ts"
+// secondlang.replaceWith(myli)
+
+const first = document.querySelector("li:first-child")
+const newli = document.createElement("li")
+newli.textContent = "typescript"
+first.replaceWith(newli);
+
+
+const last = document.querySelector("li:last-child")
+last.remove();
+
+</script>
+
+</html>
