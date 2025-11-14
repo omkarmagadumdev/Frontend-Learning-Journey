@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>two</title>
+</head>
+<body style="background-color: black; color: white;">
+
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const sayomkar = function (){
+        console.log("omkar")
+    }
+    const changetext = function(){
+        document.querySelector("h1").innerHTML = "hello ji"
+    }
+
+    const change = setTimeout(changetext,2000)
+
+    document.querySelector("#stop").addEventListener("click",function(){
+        clearTimeout(change);
+        console.log("stopped");
+        
+    })
+</script>
+</html>
