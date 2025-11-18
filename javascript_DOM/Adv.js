@@ -1,10 +1,10 @@
-let products = {
-    name:"iphone17promax",
-    company:"apple",
-    myname :"omkar",
-    ceo:"tim",
-    price:15000
-}
+// let products = {
+//     name:"iphone17promax",
+//     company:"apple",
+//     myname :"omkar",
+//     ceo:"tim",
+//     price:15000
+// }
 
 //Object.keys(product) 
 //Object.values(product)
@@ -14,3 +14,5 @@ let products = {
  
 
 // ++++++++++++++++++++++++++++++++ 
+
+
