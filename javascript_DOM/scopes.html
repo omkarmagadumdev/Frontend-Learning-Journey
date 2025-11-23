@@ -18,19 +18,29 @@
     // console.log(arr);
 
 
-   function fun(){
+//    function fun(){
 
-    let count = 0;
-    return function (){
-        let c = count++;
-        console.log(c)
+//     let count = 0;
+//     return function (){
+//         let c = count++;
+//         console.log(c)
+//     }
+//    }
+
+
+//    let f = fun();
+// f();
+
+function product(n,p,d){
+    this.name = n;
+    this.price = p;
+    this.description = d;
+    this.displayproduct = function (){
+            console.log("name:",this.name,"price:",this.price,"description:",this.description)    
     }
-   }
 
+}
 
-   let f = fun();
-f();
-//practised
 
 
 
