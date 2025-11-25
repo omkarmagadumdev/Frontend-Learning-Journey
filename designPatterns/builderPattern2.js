@@ -78,5 +78,3 @@ const p = Product.Builder.setName("iphone 17 pro max")
   .build();
 console.log(p);
 
-
-
