@@ -21,3 +21,6 @@ let c = calculate(arr,function (ele){
 })
 
 console.log(c);
+
+
+
